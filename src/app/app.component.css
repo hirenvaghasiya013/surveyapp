@@ -1,0 +1,19 @@
+p{
+  font-family: Lato;
+}
+
+a{
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #e2e2e2;
+  border-radius:5px;
+  margin: 5px 10px;
+  border: 1px solid #0000ee; 
+}
+
+a.active{
+  color: #e2e289;
+  background-color: #000000;
+  border: 1px solid #0000ee;
+
+}

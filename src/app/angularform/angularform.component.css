@@ -1,0 +1,9 @@
+.formdiv{
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+.form-check label {
+    margin-right: 15px;
+    vertical-align: middle;
+}

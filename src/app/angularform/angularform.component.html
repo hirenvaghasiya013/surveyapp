@@ -1,0 +1,27 @@
+<div class="formdiv">
+  <form #loginFrm="ngForm" (ngSubmit)="saveData(loginFrm)">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Input Type</label>
+      <input type="text" class="form-control" [(ngModel)]="json.inputtext" name="inputtext" placeholder="Enter Input"
+        required>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Input Type Email</label>
+      <input type="email" class="form-control" [(ngModel)]="json.email" name="email" placeholder="Enter Email" required>
+    </div>
+    <div class="form-check">
+      <label for="exampleInputEmail1">Checkbox Type</label>
+      <input type="checkbox" class="form-check-input" [(ngModel)]="json.checkbox" name="checkbox">
+    </div>
+    <div class="form-check">
+      <label for="exampleInput1">Radio Type</label>
+      <input type="radio" class="form-check-input" id="exampleInput1" [value]="true" [(ngModel)]="json.sex" name="sexradio">
+    </div>
+    <div class="form-check">
+      <label for="exampleInput2">Radio Type</label>
+      <input type="radio" class="form-check-input" id="exampleInput2" [value]="false" [(ngModel)]="json.sex" name="sexradio">
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!loginFrm.form.valid">Submit</button>
+  </form>
+  {{ json | json }}
+</div>
